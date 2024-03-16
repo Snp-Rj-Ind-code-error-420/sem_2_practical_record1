@@ -7,10 +7,61 @@
 > yea give some star guys
 
 >[!warning]
->work still in progress
+>comment mat chap lena (Rishi)
 
 - goal
 - [x] complete all question 
+
+# Q1 student grade calculator
+
+```python
+
+from statistics import mean
+class Student:
+ 	def __init__(self,name,a,b,c,d,e):
+ 		self.name=name
+ 		self.lst={'english':a,'mathematics':b,'science':c,'social studies':d,'computer':e}
+
+ 	def grade(self,subject_marks):
+ 		if subject_marks>=90:
+ 			return 'A'
+ 		elif subject_marks<90 and subject_marks>=80:
+ 			return 'B'
+ 		elif subject_marks<80 and subject_marks>=70:
+ 			return 'C'
+ 		elif subject_marks<70 and subject_marks>=60:
+ 			return 'D'
+ 		elif subject_marks<60 and subject_marks>=40:
+ 			return 'E'
+ 		else:
+ 			return 'ERROR'
+
+ 	def avera(self):
+ 		tem_lst=[]
+ 		x=0
+ 		for i in self.lst.items():
+ 			tem_lst.append(i[1])
+ 		print(f'mean/avg {mean(tem_lst)}')
+ 		for _ in tem_lst:
+ 			x+=_ 
+ 		print(f"mean {x/len(tem_lst)}")
+
+ 	def display_std(self):
+ 		print(f'student name {self.name}')
+ 		for _ in self.lst.items():
+ 			print(f'{_[0] } : { _[1]}')
+ 		self.avera()
+
+
+std1=Student('ola',80,40,50,60,30)
+# std1.avera()s
+std1.display_std()
+
+
+
+```
+
+
 
 # Q2 prime & odd set
 

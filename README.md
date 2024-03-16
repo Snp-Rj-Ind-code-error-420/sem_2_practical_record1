@@ -33,6 +33,8 @@ class Student:
  			return 'D'
  		elif subject_marks<60 and subject_marks>=40:
  			return 'E'
+ 		elif subject_marks<40:
+ 			return 'F'
  		else:
  			return 'ERROR'
 
@@ -49,7 +51,7 @@ class Student:
  	def display_std(self):
  		print(f'student name {self.name}')
  		for _ in self.lst.items():
- 			print(f'{_[0] } : { _[1]}')
+ 			print(f'{_[0] } : { _[1]} grade {self.grade(_[1])}')
  		self.avera()
 
 

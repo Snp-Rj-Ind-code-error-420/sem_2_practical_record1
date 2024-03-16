@@ -12,6 +12,51 @@
 - goal
 - [x] complete all question 
 
+# Q2 prime & odd set
+
+```python
+
+lst1_odd={ _ for _ in range(1,41,2) }
+lst_prime={}
+def check_prime(input_variable:int) ->bool:
+	cnt=0
+	for  i in range(1,input_variable+1):
+		if input_variable%i == 0:
+			cnt+=1
+		else:
+			continue
+
+		if cnt>2:
+			break
+
+	if cnt==2:
+		return True
+	else:
+		return False
+temp_lst=[]
+for i in range(1,41):
+	
+	# print(f" {i}  {check_prime(i)} ",end=' ')
+	if check_prime(i):
+		# print(i)
+		temp_lst.append(i)
+
+lst_prime= set(temp_lst)
+print(lst_prime)
+print(lst1_odd)
+
+print(f'union {lst_prime | lst1_odd}')
+print(f'intersection {lst_prime &lst1_odd}')
+print(f'difference {lst_prime - lst1_odd}')
+print(f'symmeric difference {lst_prime ^lst1_odd}')
+
+
+
+
+```
+
+
+
 # Q3 contact
 ```python
 

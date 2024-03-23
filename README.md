@@ -7,7 +7,7 @@
 > yea give some star guys
 
 >[!warning]
->comment mat chap lena (Rishi)
+>comment mat chap lena
 
 - goal
 - [x] complete all question 
